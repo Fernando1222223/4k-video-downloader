@@ -1,0 +1,19 @@
+<svg width="300" height="60" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="btnGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#0EA5E9"/>
+      <stop offset="100%" stop-color="#6366F1"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="0" y="0" width="300" height="60" rx="30" fill="url(#btnGrad)"/>
+  <rect x="0" y="0" width="300" height="60" rx="30" fill="none" stroke="white" stroke-width="1" opacity="0.2"/>
+
+  <text x="150" y="26" text-anchor="middle"
+        font-family="'Segoe UI',Arial,sans-serif"
+        font-size="18" font-weight="700" fill="white">⬇  Download for Windows</text>
+
+  <text x="150" y="46" text-anchor="middle"
+        font-family="'Segoe UI',Arial,sans-serif"
+        font-size="12" fill="white" opacity="0.75">v3.0.0 · Free · No Registration</text>
+</svg>

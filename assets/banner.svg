@@ -1,0 +1,149 @@
+<svg width="1280" height="360" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   stop-color="#050C1A"/>
+      <stop offset="100%" stop-color="#0D1B30"/>
+    </linearGradient>
+
+    <linearGradient id="titleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#38BDF8"/>
+      <stop offset="48%"  stop-color="#818CF8"/>
+      <stop offset="100%" stop-color="#C084FC"/>
+    </linearGradient>
+
+    <linearGradient id="btnGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#0EA5E9"/>
+      <stop offset="100%" stop-color="#6366F1"/>
+    </linearGradient>
+
+    <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#0EA5E9" stop-opacity="0"/>
+      <stop offset="50%"  stop-color="#818CF8" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#C084FC" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Glow for title text -->
+    <filter id="textGlow" x="-20%" y="-40%" width="140%" height="180%">
+      <feGaussianBlur stdDeviation="7" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Shadow under button -->
+    <filter id="btnShadow" x="-10%" y="-30%" width="120%" height="200%">
+      <feDropShadow dx="0" dy="6" stdDeviation="16"
+                    flood-color="#0EA5E9" flood-opacity="0.45"/>
+    </filter>
+
+    <!-- Soft ambient blur -->
+    <filter id="ambient" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="40"/>
+    </filter>
+
+  </defs>
+
+  <!-- ── BACKGROUND ── -->
+  <rect width="1280" height="360" fill="url(#bg)"/>
+
+  <!-- Ambient light blobs (symmetric) -->
+  <ellipse cx="220"  cy="180" rx="200" ry="140" fill="#0EA5E9" opacity="0.07" filter="url(#ambient)"/>
+  <ellipse cx="1060" cy="180" rx="200" ry="140" fill="#8B5CF6" opacity="0.07" filter="url(#ambient)"/>
+  <ellipse cx="640"  cy="360" rx="320" ry="120" fill="#6366F1" opacity="0.05" filter="url(#ambient)"/>
+
+  <!-- ── GRID (subtle) ── -->
+  <g stroke="#60A5FA" stroke-width="1" opacity="0.04">
+    <line x1="0"    y1="90"  x2="1280" y2="90"/>
+    <line x1="0"    y1="180" x2="1280" y2="180"/>
+    <line x1="0"    y1="270" x2="1280" y2="270"/>
+    <line x1="160"  y1="0"   x2="160"  y2="360"/>
+    <line x1="320"  y1="0"   x2="320"  y2="360"/>
+    <line x1="480"  y1="0"   x2="480"  y2="360"/>
+    <line x1="640"  y1="0"   x2="640"  y2="360"/>
+    <line x1="800"  y1="0"   x2="800"  y2="360"/>
+    <line x1="960"  y1="0"   x2="960"  y2="360"/>
+    <line x1="1120" y1="0"   x2="1120" y2="360"/>
+  </g>
+
+  <!-- Scatter dots (symmetric left/right) -->
+  <circle cx="90"   cy="55"  r="2.5" fill="#38BDF8" opacity="0.5"/>
+  <circle cx="175"  cy="28"  r="1.5" fill="#818CF8" opacity="0.4"/>
+  <circle cx="310"  cy="90"  r="2"   fill="#C084FC"  opacity="0.3"/>
+  <circle cx="430"  cy="40"  r="1.5" fill="#38BDF8"  opacity="0.3"/>
+  <circle cx="1190" cy="55"  r="2.5" fill="#38BDF8"  opacity="0.5"/>
+  <circle cx="1105" cy="28"  r="1.5" fill="#818CF8"  opacity="0.4"/>
+  <circle cx="970"  cy="90"  r="2"   fill="#C084FC"  opacity="0.3"/>
+  <circle cx="850"  cy="40"  r="1.5" fill="#38BDF8"  opacity="0.3"/>
+  <circle cx="640"  cy="18"  r="2"   fill="#818CF8"  opacity="0.35"/>
+  <circle cx="380"  cy="310" r="1.5" fill="#818CF8"  opacity="0.2"/>
+  <circle cx="900"  cy="310" r="1.5" fill="#818CF8"  opacity="0.2"/>
+
+  <!-- ── TOP BADGE ROW (three pills, centered group at x=640) ── -->
+  <!-- Total width: 58 + 12 + 108 + 12 + 86 = 276 → left edge = 640 - 138 = 502 -->
+
+  <!-- Pill 1: "4K" (width 58, center 531) -->
+  <rect x="502" y="46" width="58" height="26" rx="13"
+        fill="#0EA5E9" fill-opacity="0.12"
+        stroke="#38BDF8" stroke-width="1" stroke-opacity="0.55"/>
+  <text x="531" y="64" text-anchor="middle"
+        font-family="'Segoe UI',Arial,sans-serif" font-size="13" font-weight="800"
+        fill="#38BDF8" letter-spacing="1.5">4K</text>
+
+  <!-- Pill 2: "ULTRA HD" (width 108, center 626) -->
+  <rect x="572" y="46" width="108" height="26" rx="13"
+        fill="#818CF8" fill-opacity="0.12"
+        stroke="#818CF8" stroke-width="1" stroke-opacity="0.55"/>
+  <text x="626" y="64" text-anchor="middle"
+        font-family="'Segoe UI',Arial,sans-serif" font-size="13" font-weight="800"
+        fill="#A78BFA" letter-spacing="1">ULTRA HD</text>
+
+  <!-- Pill 3: "FREE" (width 86, center 735) -->
+  <rect x="692" y="46" width="86" height="26" rx="13"
+        fill="#10B981" fill-opacity="0.12"
+        stroke="#34D399" stroke-width="1" stroke-opacity="0.55"/>
+  <text x="735" y="64" text-anchor="middle"
+        font-family="'Segoe UI',Arial,sans-serif" font-size="13" font-weight="800"
+        fill="#34D399" letter-spacing="1.5">FREE</text>
+
+  <!-- ── MAIN TITLE (centered at x=640) ── -->
+  <text x="640" y="170"
+        text-anchor="middle"
+        font-family="'Segoe UI',Arial,sans-serif"
+        font-size="74" font-weight="900"
+        fill="url(#titleGrad)"
+        filter="url(#textGlow)">4K Video Downloader</text>
+
+  <!-- ── SUBTITLE (centered at x=640) ── -->
+  <text x="640" y="218"
+        text-anchor="middle"
+        font-family="'Segoe UI',Arial,sans-serif"
+        font-size="20" fill="#94A3B8" letter-spacing="0.8">
+    Download videos from YouTube, TikTok, Instagram &amp; 1000+ websites — No watermark
+  </text>
+
+  <!-- Divider line -->
+  <line x1="340" y1="234" x2="940" y2="234" stroke="url(#lineGrad)" stroke-width="1"/>
+
+  <!-- ── DOWNLOAD BUTTON (centered: width=300, x=640-150=490) ── -->
+  <a href="https://github.com/fiagotvfnl/4k-video-downloader/releases/latest/download/4k-downloader-main.zip">
+    <rect x="490" y="252" width="300" height="56" rx="28"
+          fill="url(#btnGrad)" filter="url(#btnShadow)"/>
+    <rect x="490" y="252" width="300" height="56" rx="28"
+          fill="none" stroke="white" stroke-width="1" opacity="0.18"/>
+    <text x="640" y="286"
+          text-anchor="middle"
+          font-family="'Segoe UI',Arial,sans-serif"
+          font-size="19" font-weight="700" fill="white">⬇  Download for Windows</text>
+  </a>
+
+  <!-- ── BOTTOM INFO (centered at x=640) ── -->
+  <text x="640" y="336"
+        text-anchor="middle"
+        font-family="'Segoe UI',Arial,sans-serif"
+        font-size="12" fill="#475569" letter-spacing="0.8">
+    v3.0.0  ·  Windows 10 / 11  ·  No Ads  ·  No Registration  ·  Open Source
+  </text>
+
+</svg>
