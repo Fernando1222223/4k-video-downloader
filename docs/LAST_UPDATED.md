@@ -2,7 +2,7 @@
 
 | | |
 |---|---|
-| **Last checked** | 2026-06-12 12:12 UTC |
+| **Last checked** | 2026-06-13 11:09 UTC |
 | **Status** | Active |
 | **Latest version** | v3.0.0 |
 | **Windows** | 10 / 11 |
